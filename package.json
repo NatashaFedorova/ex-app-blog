@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index",
-    "dev": "nodemon index"
+    "start:dev": "npx nodemon index",
+    "lint": "npx eslint src",
+    "lint:fix": "npx eslint src --fix"
   },
   "repository": {
     "type": "git",
@@ -26,6 +28,11 @@
     "joi": "^17.8.3",
     "morgan": "^1.10.0",
     "nodemon": "^2.0.21",
+    "npx": "^10.2.2",
     "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.35.0",
+    "eslint-config-google": "^0.14.0"
   }
 }
